@@ -95,7 +95,7 @@ export default async function Login({
 
     const email = formData.get("email") as string
     const password = formData.get("password") as string
-
+    console.log(email, password)
     const emailDomainWhitelistPatternsString = await getEnvVarOrEdgeConfigValue(
       "EMAIL_DOMAIN_WHITELIST"
     )
